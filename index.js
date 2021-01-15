@@ -15,7 +15,6 @@ $('.btn').click((event) => {
 
 	let finalString = `https://api.mymemory.translated.net/get?q=${ques}&langpair=${l2}|${l1}`;
 
-	console.log(finalString);
 	$('.ques').val('');
 	$.getJSON(finalString)
 		.done((res) => {
